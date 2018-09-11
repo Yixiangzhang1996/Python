@@ -1,8 +1,8 @@
 # _*_ coding = UTF-8 _*_
 
-output_file = open(r"test.fa","w")
+output_file = open(r"~/Desktop/Python/test.fa","w")
 
-with open(r"test.fastq","r") as input_fastq:
+with open(r"~/Desktop/Python/test.fastq","r") as input_fastq:
     for index,line in enumerate(input_fastq): #enumerate遍历所有的输入数据
         if index % 4 == 0:
             output_file.write(">" + line.strip()[1:] + "\n")
