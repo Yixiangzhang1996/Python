@@ -87,7 +87,7 @@ if __name__ == '__main__':
     except:
         raise IOError("Error in loading genome FASTA")
 
-    # args.InputBed = "/Users/meng/PycharmProjects/songjh_project/data/pus10_parclip/overlap_peak_in_total_cluster.bed"
+    # args.InputBed = "data/pus10_parclip/overlap_peak_in_total_cluster.bed"
 
     with open(args.InputBed,"r") as input_file:
         for index,line in enumerate(input_file):
